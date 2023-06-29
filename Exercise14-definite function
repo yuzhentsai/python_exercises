@@ -1,0 +1,20 @@
+x = int(input("Please enter an integer:"))
+n = x
+
+def isPrime(n):
+ for i in range(2,n):
+ if n % i == 0:
+ return False
+ break
+ else:
+ pass
+ return True
+
+def Primes(n):
+  Prime = []
+ for i in range(2,n):
+ if isPrime(i) == True:
+      Prime.append(i)
+
+ return Prime
+print(Primes(n))
