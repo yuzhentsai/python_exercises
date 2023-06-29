@@ -1,0 +1,15 @@
+x = list(input("Please enter a string:")) # Hello World
+count = {} 
+for i in x:
+ if i in count:
+    count[i]+=1
+ else:
+    count[i] = 1
+
+print(count) # {‘H’: 1, ‘e’: 1, ‘l’: 3, ‘o’: 2, ‘ ’:1, ‘W’: 1, ‘r’: 1, ‘d’: 1}
+
+comprehension:
+x = list(input("Please enter a string:")) # Hello World
+count = {i:x.count(i) for i in x} 
+
+print(count) # {‘H’: 1, ‘e’: 1, ‘l’: 3, ‘o’: 2, ‘ ’:1, ‘W’: 1, ‘r’: 1, ‘d’: 1}
