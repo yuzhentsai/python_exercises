@@ -1,0 +1,11 @@
+x = input("Please enter a number:") # 4
+x = int(x)
+number = 1
+sum = 0 
+for num1 in range(1,x+1):
+
+  number *= num1
+  num1 += 1
+  sum+=number
+
+print(sum) # 33
